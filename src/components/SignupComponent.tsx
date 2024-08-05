@@ -2,10 +2,10 @@
 import appwriteService from "@/appwrite/config";
 import useAuth from "@/context/useAuth";
 import Link from "next/link";
-import { useState, useEffect, FormEvent } from "react";
+import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
 
-const Signup = () => {
+const SignupComponent = () => {
   const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
@@ -142,4 +142,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default SignupComponent;
